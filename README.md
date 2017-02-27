@@ -1,16 +1,16 @@
 # Simple autocomplete
 
-A naive implementation in Clojure of autocomplete functionality, allowing the creation of a [Trie structure](https://en.wikipedia.org/wiki/Trie) from a list of words and matching prefixes against that structure to return candidate words.
+A naive implementation in Clojure of autocomplete functionality, allowing  creation of a [Trie structure](https://en.wikipedia.org/wiki/Trie) from a list of words and matching prefixes against that structure to return candidate words.
 
 ## Usage
 
-If you don't aleady have the Clojure runtime install, you can install [Leiningen](https://leiningen.org) easily on MacOS with [Homebrew](https://brew.sh):
+If you don't already have the Clojure runtime installed, you can install [Leiningen](https://leiningen.org) easily on MacOS with [Homebrew](https://brew.sh):
 
 ```clojure
 $ brew install leiningen
 ```
 
-In development mode, this project imports a snapshot of the `wordsEn.txt` file from the [SIL International](http://www-01.sil.org/linguistics/wordlists/english/) archive described as "a list of 109582 English words compiled and corrected in 1991 from lists obtained from the Interociter bulletin board." You, of course, can use the language word list of your choice; see the example in the `Interactive REPL` section below, which loads from the same URL but can be any arbitrary resource.
+In development mode, this project imports a snapshot of the `wordsEn.txt` file from the [SIL International](http://www-01.sil.org/linguistics/wordlists/english/) archive described as "a list of 109582 English words compiled and corrected in 1991 from lists obtained from the Interociter bulletin board." You, of course, can use the language word list of your choice; see the example in the `Interactive REPL` section below, which loads from the same URL but can be any arbitrary resource, local or remote.
 
 ### Running the test suite
 
@@ -28,7 +28,7 @@ Finished in 0.00087 seconds
 
 ### Interactive commandline
 
-Run the following command (which will initially load Clojure and project dependencies if you're running this for the first time):
+Run the following command (which will populate Clojure and project dependencies if you're running this for the first time):
 
 ```clojure
 $ lein run
