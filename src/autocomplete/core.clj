@@ -30,7 +30,7 @@
 
 (defn- get-prefix
   "Private helper method used with -main to loop through suffixes
-   entered on the commandline when invoked as 'lein trampoline run'.
+   entered on the commandline when invoked as 'lein run'.
   "
   [prompt]
   (loop [p prompt]
